@@ -1,0 +1,33 @@
+{
+  "existing": {
+    "journal": {
+      "JOURNAL00": {
+        "label": "s14",
+        "url": "s15"
+      },
+      "JOURNAL01": {
+        "label": "s28",
+        "url": "s29"
+      },
+      "JOURNAL02": {
+        "label": "s3c",
+        "url": "s3d"
+      }
+    }
+  },
+  "new": {
+    "journal": {
+      "journal_ref01": {
+        "label": "s50",
+        "url": "s51"
+      }
+    }
+  },
+  "requests": {
+    "GET /journal": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

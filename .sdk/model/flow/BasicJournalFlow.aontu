@@ -1,0 +1,22 @@
+# BasicJournalFlow
+
+main: kit: flow: BasicJournalFlow:
+{
+  entity: "journal",
+  kind: "basic",
+  name: "BasicJournalFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "journal_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicJournalFlow"
+}

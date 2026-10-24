@@ -1,0 +1,22 @@
+# BasicWardrobeFlow
+
+main: kit: flow: BasicWardrobeFlow:
+{
+  entity: "wardrobe",
+  kind: "basic",
+  name: "BasicWardrobeFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "wardrobe_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicWardrobeFlow"
+}

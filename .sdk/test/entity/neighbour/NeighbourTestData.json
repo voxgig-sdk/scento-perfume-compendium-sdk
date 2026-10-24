@@ -1,0 +1,36 @@
+{
+  "existing": {
+    "neighbour": {
+      "NEIGHBOUR00": {
+        "label": "s14",
+        "url": "s15",
+        "perfume_id": "PERFUME01"
+      },
+      "NEIGHBOUR01": {
+        "label": "s28",
+        "url": "s29",
+        "perfume_id": "PERFUME01"
+      },
+      "NEIGHBOUR02": {
+        "label": "s3c",
+        "url": "s3d",
+        "perfume_id": "PERFUME01"
+      }
+    }
+  },
+  "new": {
+    "neighbour": {
+      "neighbour_ref01": {
+        "label": "s50",
+        "url": "s51"
+      }
+    }
+  },
+  "requests": {
+    "GET /perfumes/{perfume}/neighbours": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "existing": {
+    "contrast": {
+      "CONTRAST00": {
+        "label": "s14",
+        "url": "s15"
+      },
+      "CONTRAST01": {
+        "label": "s28",
+        "url": "s29"
+      },
+      "CONTRAST02": {
+        "label": "s3c",
+        "url": "s3d"
+      }
+    }
+  },
+  "new": {
+    "contrast": {
+      "contrast_ref01": {
+        "label": "s50",
+        "url": "s51"
+      }
+    }
+  },
+  "requests": {
+    "GET /contrast": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

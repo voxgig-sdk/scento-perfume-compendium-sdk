@@ -1,0 +1,22 @@
+# BasicContrastFlow
+
+main: kit: flow: BasicContrastFlow:
+{
+  entity: "contrast",
+  kind: "basic",
+  name: "BasicContrastFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "contrast_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicContrastFlow"
+}

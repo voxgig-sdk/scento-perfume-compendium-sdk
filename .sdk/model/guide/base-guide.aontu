@@ -1,0 +1,96 @@
+# Generated from the API definition and overwritten on every build: do not
+# edit this file. Put customizations in the guide entry file, which includes
+# this one and overrides its defaults:
+#   guide.aontu
+
+guide: {
+  metrics: count: entity: 12
+  metrics: count: path: 14
+  metrics: count: method: 14
+
+  entity: contrast: {
+    path: "/contrast": {
+      op: list: method: *GET
+    }
+  }
+
+  entity: edit: {
+    path: "/edits/{occasion}": {
+      rename: param: "occasion": *"id"
+      op: load: method: *GET
+    }
+  }
+
+  entity: family: {
+    path: "/families": {
+      op: list: method: *GET
+    }
+    path: "/families/{family}": {
+      rename: param: "family": *"id"
+      op: load: method: *GET
+    }
+  }
+
+  entity: house: {
+    path: "/houses/{house}": {
+      rename: param: "house": *"id"
+      op: load: method: *GET
+    }
+  }
+
+  entity: journal: {
+    path: "/journal": {
+      op: list: method: *GET
+    }
+  }
+
+  entity: lexicon: {
+    path: "/lexicon/{term}": {
+      rename: param: "term": *"id"
+      op: load: method: *GET
+    }
+  }
+
+  entity: match: {
+    path: "/materials/match": {
+      op: list: method: *GET
+    }
+  }
+
+  entity: material: {
+    path: "/materials/{material}": {
+      rename: param: "material": *"id"
+      op: load: method: *GET
+    }
+  }
+
+  entity: neighbour: {
+    path: "/perfumes/{perfume}/neighbours": {
+      rename: param: "perfume": *"perfume_id"
+      op: list: method: *GET
+    }
+  }
+
+  entity: perfume: {
+    path: "/perfumes": {
+      op: list: method: *GET
+    }
+    path: "/perfumes/{perfume}": {
+      rename: param: "perfume": *"id"
+      op: load: method: *GET
+    }
+  }
+
+  entity: search: {
+    path: "/search": {
+      op: list: method: *GET
+    }
+  }
+
+  entity: wardrobe: {
+    path: "/wardrobe": {
+      op: list: method: *GET
+    }
+  }
+
+}

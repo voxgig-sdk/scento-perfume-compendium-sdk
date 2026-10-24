@@ -1,0 +1,33 @@
+{
+  "existing": {
+    "match": {
+      "MATCH00": {
+        "label": "s14",
+        "url": "s15"
+      },
+      "MATCH01": {
+        "label": "s28",
+        "url": "s29"
+      },
+      "MATCH02": {
+        "label": "s3c",
+        "url": "s3d"
+      }
+    }
+  },
+  "new": {
+    "match": {
+      "match_ref01": {
+        "label": "s50",
+        "url": "s51"
+      }
+    }
+  },
+  "requests": {
+    "GET /materials/match": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

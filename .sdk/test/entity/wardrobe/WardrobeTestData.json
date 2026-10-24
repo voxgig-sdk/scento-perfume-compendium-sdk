@@ -1,0 +1,33 @@
+{
+  "existing": {
+    "wardrobe": {
+      "WARDROBE00": {
+        "label": "s14",
+        "url": "s15"
+      },
+      "WARDROBE01": {
+        "label": "s28",
+        "url": "s29"
+      },
+      "WARDROBE02": {
+        "label": "s3c",
+        "url": "s3d"
+      }
+    }
+  },
+  "new": {
+    "wardrobe": {
+      "wardrobe_ref01": {
+        "label": "s50",
+        "url": "s51"
+      }
+    }
+  },
+  "requests": {
+    "GET /wardrobe": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

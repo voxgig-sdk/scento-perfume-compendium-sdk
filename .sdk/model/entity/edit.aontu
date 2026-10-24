@@ -1,0 +1,150 @@
+# Entity: edit
+
+main: kit: entity: edit: {
+
+  alias: field: {}
+
+  fields: {
+    cite: {
+      h: "Cite"
+      n: "cite"
+      r: true
+      sh: "How to credit the answer."
+      t: "`$STRING`"
+    }
+    continuation: {
+      h: "Continuation"
+      n: "continuation"
+      r: true
+      sh: "Pass back to fetch the next part of a list; null when complete."
+      t: [
+        "`$ONE`"
+        [
+          "`$STRING`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    detail: {
+      h: "Detail"
+      n: "detail"
+      r: true
+      sh: "The tool-specific answer."
+      t: "`$OBJECT`"
+    }
+    folio: {
+      h: "Folio"
+      n: "folio"
+      r: true
+      sh: "Which tool wrote this answer."
+      t: "`$STRING`"
+    }
+    further_reading: {
+      h: "Further Reading"
+      n: "further_reading"
+      r: true
+      t: "`$ARRAY`"
+    }
+    id: {
+      h: "Id"
+      n: "id"
+      r: false
+      t: "`$STRING`"
+    }
+    lede: {
+      h: "Lede"
+      n: "lede"
+      r: true
+      sh: "One sentence an assistant can quote as is."
+      t: "`$STRING`"
+    }
+    scento_page: {
+      h: "Scento Page"
+      n: "scento_page"
+      r: true
+      sh: "The scento.com page to read on."
+      t: "`$OBJECT`"
+    }
+  }
+
+  id: {
+    field: "id"
+    name: "id"
+  }
+
+  name: "edit"
+  op: {
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /edits/{occasion}"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                ex: "office"
+                k: "param"
+                n: "id"
+                or: "occasion"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+            query: [
+              {
+                k: "query"
+                n: "gender_lean"
+                or: "gender_lean"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                ex: "en"
+                k: "query"
+                n: "lang"
+                or: "lang"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/edits/{occasion}"
+          q: {
+            exist: [
+              "id"
+            ]
+          }
+          r: {
+            param: {
+              occasion: "id"
+            }
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "edits"
+            }
+            {
+              var: "id"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

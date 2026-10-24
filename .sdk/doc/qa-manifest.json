@@ -1,0 +1,18 @@
+{
+  "files": [
+    "SUMMARY.md"
+  ],
+  "config": ".sdk/doc/qa/vale.ini",
+  "routes": {},
+  "quoted": {
+    "SUMMARY.md": [
+      "> Free perfume and fragrance API and MCP server for AI assistants, built on Scento&#39;s verified perfume database: notes, scent families, similar perfumes, raw materials and houses, each answer linked to a page on scento.com. Covers 1,400+ designer and niche perfumes, 400+ raw materials and 140+ perfume houses. No key, no account.\n>\n> The same twelve read-only answers as the MCP server at https://www.scento.com/mcp. Every answer is a folio: a quotable lede, a detail object, the scento.com page to read on, further reading and a cite line. Lists return an opaque continuation value. Comma-separated values are accepted wherever a list is expected.",
+      "A folio answer",
+      "How to credit the answer.",
+      "One sentence an assistant can quote as is.",
+      "Pass back to fetch the next part of a list; null when complete.",
+      "The tool-specific answer.",
+      "Which tool wrote this answer."
+    ]
+  }
+}

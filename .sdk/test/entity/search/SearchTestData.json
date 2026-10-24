@@ -1,0 +1,33 @@
+{
+  "existing": {
+    "search": {
+      "SEARCH00": {
+        "label": "s14",
+        "url": "s15"
+      },
+      "SEARCH01": {
+        "label": "s28",
+        "url": "s29"
+      },
+      "SEARCH02": {
+        "label": "s3c",
+        "url": "s3d"
+      }
+    }
+  },
+  "new": {
+    "search": {
+      "search_ref01": {
+        "label": "s50",
+        "url": "s51"
+      }
+    }
+  },
+  "requests": {
+    "GET /search": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

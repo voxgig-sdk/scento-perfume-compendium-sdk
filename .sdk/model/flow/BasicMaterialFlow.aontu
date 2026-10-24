@@ -1,0 +1,32 @@
+# BasicMaterialFlow
+
+main: kit: flow: BasicMaterialFlow:
+{
+  entity: "material",
+  kind: "basic",
+  name: "BasicMaterialFlow",
+  step: [
+    {
+      i: {
+        ref: "material_ref01",
+        srcdatavar: "material_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "material01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-material_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicMaterialFlow"
+}

@@ -1,0 +1,56 @@
+{
+  "existing": {
+    "edit": {
+      "EDIT00": {
+        "cite": "s50",
+        "continuation": "s51",
+        "detail": {},
+        "folio": "s53",
+        "further_reading": [],
+        "id": "EDIT00",
+        "lede": "s56",
+        "scento_page": {}
+      },
+      "EDIT01": {
+        "cite": "sa0",
+        "continuation": "sa1",
+        "detail": {},
+        "folio": "sa3",
+        "further_reading": [],
+        "id": "EDIT01",
+        "lede": "sa6",
+        "scento_page": {}
+      },
+      "EDIT02": {
+        "cite": "sf0",
+        "continuation": "sf1",
+        "detail": {},
+        "folio": "sf3",
+        "further_reading": [],
+        "id": "EDIT02",
+        "lede": "sf6",
+        "scento_page": {}
+      }
+    }
+  },
+  "new": {
+    "edit": {
+      "edit_ref01": {
+        "cite": "s140",
+        "continuation": "s141",
+        "detail": {},
+        "folio": "s143",
+        "further_reading": [],
+        "lede": "s146",
+        "scento_page": {}
+      }
+    }
+  },
+  "requests": {
+    "GET /edits/{occasion}": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

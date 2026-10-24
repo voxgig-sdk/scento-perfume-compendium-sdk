@@ -1,0 +1,69 @@
+{
+  "existing": {
+    "perfume": {
+      "PERFUME00": {
+        "cite": "s64",
+        "continuation": "s65",
+        "detail": {},
+        "folio": "s67",
+        "further_reading": [],
+        "id": "PERFUME00",
+        "label": "s6a",
+        "lede": "s6b",
+        "scento_page": {},
+        "url": "s6d"
+      },
+      "PERFUME01": {
+        "cite": "sc8",
+        "continuation": "sc9",
+        "detail": {},
+        "folio": "scb",
+        "further_reading": [],
+        "id": "PERFUME01",
+        "label": "sce",
+        "lede": "scf",
+        "scento_page": {},
+        "url": "sd1"
+      },
+      "PERFUME02": {
+        "cite": "s12c",
+        "continuation": "s12d",
+        "detail": {},
+        "folio": "s12f",
+        "further_reading": [],
+        "id": "PERFUME02",
+        "label": "s132",
+        "lede": "s133",
+        "scento_page": {},
+        "url": "s135"
+      }
+    }
+  },
+  "new": {
+    "perfume": {
+      "perfume_ref01": {
+        "cite": "s190",
+        "continuation": "s191",
+        "detail": {},
+        "folio": "s193",
+        "further_reading": [],
+        "label": "s196",
+        "lede": "s197",
+        "scento_page": {},
+        "url": "s199"
+      }
+    }
+  },
+  "requests": {
+    "GET /perfumes": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /perfumes/{perfume}": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

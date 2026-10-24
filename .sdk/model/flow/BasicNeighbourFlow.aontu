@@ -1,0 +1,26 @@
+# BasicNeighbourFlow
+
+main: kit: flow: BasicNeighbourFlow:
+{
+  entity: "neighbour",
+  kind: "basic",
+  name: "BasicNeighbourFlow",
+  step: [
+    {
+      m: {
+        perfume_id: "perfume01"
+      }
+
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "neighbour_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicNeighbourFlow"
+}

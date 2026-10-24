@@ -1,0 +1,56 @@
+{
+  "existing": {
+    "house": {
+      "HOUSE00": {
+        "cite": "s50",
+        "continuation": "s51",
+        "detail": {},
+        "folio": "s53",
+        "further_reading": [],
+        "id": "HOUSE00",
+        "lede": "s56",
+        "scento_page": {}
+      },
+      "HOUSE01": {
+        "cite": "sa0",
+        "continuation": "sa1",
+        "detail": {},
+        "folio": "sa3",
+        "further_reading": [],
+        "id": "HOUSE01",
+        "lede": "sa6",
+        "scento_page": {}
+      },
+      "HOUSE02": {
+        "cite": "sf0",
+        "continuation": "sf1",
+        "detail": {},
+        "folio": "sf3",
+        "further_reading": [],
+        "id": "HOUSE02",
+        "lede": "sf6",
+        "scento_page": {}
+      }
+    }
+  },
+  "new": {
+    "house": {
+      "house_ref01": {
+        "cite": "s140",
+        "continuation": "s141",
+        "detail": {},
+        "folio": "s143",
+        "further_reading": [],
+        "lede": "s146",
+        "scento_page": {}
+      }
+    }
+  },
+  "requests": {
+    "GET /houses/{house}": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

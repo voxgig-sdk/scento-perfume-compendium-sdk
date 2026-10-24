@@ -1,0 +1,44 @@
+# BasicFamilyFlow
+
+main: kit: flow: BasicFamilyFlow:
+{
+  entity: "family",
+  kind: "basic",
+  name: "BasicFamilyFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "family_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "family_ref01",
+        srcdatavar: "family_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "family01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-family_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicFamilyFlow"
+}

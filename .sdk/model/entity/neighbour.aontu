@@ -1,0 +1,112 @@
+# Entity: neighbour
+
+main: kit: entity: neighbour: {
+
+  alias: field: {}
+
+  fields: {
+    label: {
+      h: "Label"
+      n: "label"
+      r: true
+      t: "`$STRING`"
+    }
+    url: {
+      fo: "uri"
+      h: "Url"
+      n: "url"
+      r: true
+      t: "`$STRING`"
+    }
+  }
+
+  name: "neighbour"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /perfumes/{perfume}/neighbours"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                ex: "oud-wood"
+                k: "param"
+                n: "perfume_id"
+                or: "perfume"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+            query: [
+              {
+                k: "query"
+                n: "continuation"
+                or: "continuation"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                ex: "en"
+                k: "query"
+                n: "lang"
+                or: "lang"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                ex: false
+                k: "query"
+                n: "same_house"
+                or: "same_house"
+                r: false
+                t: "`$BOOLEAN`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/perfumes/{perfume}/neighbours"
+          q: {
+            exist: [
+              "perfume_id"
+            ]
+          }
+          r: {
+            param: {
+              perfume: "perfume_id"
+            }
+          }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "perfumes"
+            }
+            {
+              var: "perfume_id"
+            }
+            {
+              lit: "neighbours"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+  relations: ancestors: [
+    [path("$.main.kit.entity.perfume")]
+  ]
+
+}

@@ -1,0 +1,32 @@
+# BasicHouseFlow
+
+main: kit: flow: BasicHouseFlow:
+{
+  entity: "house",
+  kind: "basic",
+  name: "BasicHouseFlow",
+  step: [
+    {
+      i: {
+        ref: "house_ref01",
+        srcdatavar: "house_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "house01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-house_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicHouseFlow"
+}

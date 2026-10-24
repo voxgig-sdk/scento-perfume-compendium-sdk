@@ -1,0 +1,44 @@
+# BasicPerfumeFlow
+
+main: kit: flow: BasicPerfumeFlow:
+{
+  entity: "perfume",
+  kind: "basic",
+  name: "BasicPerfumeFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "perfume_ref01"
+          }
+        }
+      ]
+    }
+
+    {
+      i: {
+        ref: "perfume_ref01",
+        srcdatavar: "perfume_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "perfume01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-perfume_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicPerfumeFlow"
+}

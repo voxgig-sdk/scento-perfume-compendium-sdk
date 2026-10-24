@@ -1,0 +1,72 @@
+<?php
+declare(strict_types=1);
+
+// ScentoPerfumeCompendium SDK utility registration
+
+require_once __DIR__ . '/../core/UtilityType.php';
+require_once __DIR__ . '/Clean.php';
+require_once __DIR__ . '/Done.php';
+require_once __DIR__ . '/MakeError.php';
+require_once __DIR__ . '/FeatureAdd.php';
+require_once __DIR__ . '/FeatureHook.php';
+require_once __DIR__ . '/FeatureInit.php';
+require_once __DIR__ . '/Fetcher.php';
+require_once __DIR__ . '/MakeFetchDef.php';
+require_once __DIR__ . '/MakeContext.php';
+require_once __DIR__ . '/MakeOptions.php';
+require_once __DIR__ . '/MakeRequest.php';
+require_once __DIR__ . '/MakeResponse.php';
+require_once __DIR__ . '/MakeResult.php';
+require_once __DIR__ . '/MakePoint.php';
+require_once __DIR__ . '/MakeSpec.php';
+require_once __DIR__ . '/MakeUrl.php';
+require_once __DIR__ . '/Param.php';
+require_once __DIR__ . '/PrepareAuth.php';
+require_once __DIR__ . '/PrepareBody.php';
+require_once __DIR__ . '/Graphql.php';
+require_once __DIR__ . '/PrepareHeaders.php';
+require_once __DIR__ . '/PrepareMethod.php';
+require_once __DIR__ . '/PrepareParams.php';
+require_once __DIR__ . '/PreparePath.php';
+require_once __DIR__ . '/PrepareQuery.php';
+require_once __DIR__ . '/ResultBasic.php';
+require_once __DIR__ . '/ResultBody.php';
+require_once __DIR__ . '/ResultHeaders.php';
+require_once __DIR__ . '/TransformRequest.php';
+require_once __DIR__ . '/TransformResponse.php';
+
+ScentoPerfumeCompendiumUtility::setRegistrar(function (ScentoPerfumeCompendiumUtility $u): void {
+    $u->clean = [ScentoPerfumeCompendiumClean::class, 'call'];
+    $u->clean_add = [ScentoPerfumeCompendiumClean::class, 'add'];
+    $u->clean_explain = [ScentoPerfumeCompendiumDone::class, 'clean_explain'];
+    $u->done = [ScentoPerfumeCompendiumDone::class, 'call'];
+    $u->make_error = [ScentoPerfumeCompendiumMakeError::class, 'call'];
+    $u->feature_add = [ScentoPerfumeCompendiumFeatureAdd::class, 'call'];
+    $u->feature_hook = [ScentoPerfumeCompendiumFeatureHook::class, 'call'];
+    $u->feature_init = [ScentoPerfumeCompendiumFeatureInit::class, 'call'];
+    $u->fetcher = [ScentoPerfumeCompendiumFetcher::class, 'call'];
+    $u->make_fetch_def = [ScentoPerfumeCompendiumMakeFetchDef::class, 'call'];
+    $u->make_context = [ScentoPerfumeCompendiumMakeContext::class, 'call'];
+    $u->make_options = [ScentoPerfumeCompendiumMakeOptions::class, 'call'];
+    $u->make_request = [ScentoPerfumeCompendiumMakeRequest::class, 'call'];
+    $u->make_response = [ScentoPerfumeCompendiumMakeResponse::class, 'call'];
+    $u->make_result = [ScentoPerfumeCompendiumMakeResult::class, 'call'];
+    $u->make_point = [ScentoPerfumeCompendiumMakePoint::class, 'call'];
+    $u->make_spec = [ScentoPerfumeCompendiumMakeSpec::class, 'call'];
+    $u->make_url = [ScentoPerfumeCompendiumMakeUrl::class, 'call'];
+    $u->param = [ScentoPerfumeCompendiumParam::class, 'call'];
+    $u->prepare_auth = [ScentoPerfumeCompendiumPrepareAuth::class, 'call'];
+    $u->prepare_body = [ScentoPerfumeCompendiumPrepareBody::class, 'call'];
+    $u->prepare_headers = [ScentoPerfumeCompendiumPrepareHeaders::class, 'call'];
+    $u->prepare_method = [ScentoPerfumeCompendiumPrepareMethod::class, 'call'];
+    $u->prepare_params = [ScentoPerfumeCompendiumPrepareParams::class, 'call'];
+    $u->prepare_path = [ScentoPerfumeCompendiumPreparePath::class, 'call'];
+    $u->prepare_query = [ScentoPerfumeCompendiumPrepareQuery::class, 'call'];
+    $u->graphql_body = [ScentoPerfumeCompendiumGraphql::class, 'body'];
+    $u->graphql_errors = [ScentoPerfumeCompendiumGraphql::class, 'errors'];
+    $u->result_basic = [ScentoPerfumeCompendiumResultBasic::class, 'call'];
+    $u->result_body = [ScentoPerfumeCompendiumResultBody::class, 'call'];
+    $u->result_headers = [ScentoPerfumeCompendiumResultHeaders::class, 'call'];
+    $u->transform_request = [ScentoPerfumeCompendiumTransformRequest::class, 'call'];
+    $u->transform_response = [ScentoPerfumeCompendiumTransformResponse::class, 'call'];
+});

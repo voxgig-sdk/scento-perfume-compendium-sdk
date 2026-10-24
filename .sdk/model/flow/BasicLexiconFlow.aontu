@@ -1,0 +1,32 @@
+# BasicLexiconFlow
+
+main: kit: flow: BasicLexiconFlow:
+{
+  entity: "lexicon",
+  kind: "basic",
+  name: "BasicLexiconFlow",
+  step: [
+    {
+      i: {
+        ref: "lexicon_ref01",
+        srcdatavar: "lexicon_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "lexicon01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-lexicon_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicLexiconFlow"
+}

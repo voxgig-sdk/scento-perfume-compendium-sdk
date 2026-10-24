@@ -1,0 +1,56 @@
+{
+  "existing": {
+    "material": {
+      "MATERIAL00": {
+        "cite": "s50",
+        "continuation": "s51",
+        "detail": {},
+        "folio": "s53",
+        "further_reading": [],
+        "id": "MATERIAL00",
+        "lede": "s56",
+        "scento_page": {}
+      },
+      "MATERIAL01": {
+        "cite": "sa0",
+        "continuation": "sa1",
+        "detail": {},
+        "folio": "sa3",
+        "further_reading": [],
+        "id": "MATERIAL01",
+        "lede": "sa6",
+        "scento_page": {}
+      },
+      "MATERIAL02": {
+        "cite": "sf0",
+        "continuation": "sf1",
+        "detail": {},
+        "folio": "sf3",
+        "further_reading": [],
+        "id": "MATERIAL02",
+        "lede": "sf6",
+        "scento_page": {}
+      }
+    }
+  },
+  "new": {
+    "material": {
+      "material_ref01": {
+        "cite": "s140",
+        "continuation": "s141",
+        "detail": {},
+        "folio": "s143",
+        "further_reading": [],
+        "lede": "s146",
+        "scento_page": {}
+      }
+    }
+  },
+  "requests": {
+    "GET /materials/{material}": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}
